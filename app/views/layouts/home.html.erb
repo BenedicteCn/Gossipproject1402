@@ -33,7 +33,7 @@
    <p><% index +=1 %>
       <strong><%= gossip.title %><br/></strong>
       <footer class="blockquote-footer"><%= User.all.find_by(id: gossip.user_id).first_name%>, le <cite title="Source Creation"><%= gossip.created_at%></cite></footer>
-      <a href="/user/<%="#{index}"%>/">Clique ici pour lire le contenu du potin </a>
+      <a href="/user/<%="#{index}"%>/">Clique ici pour lire le contenu du potin et découvrir plus d'infos sur l'auteur ! </a>
     </p>
     <%end%></div>
     </div>
