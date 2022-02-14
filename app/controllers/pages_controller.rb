@@ -20,7 +20,7 @@ class PagesController < ApplicationController
 
   def potin
     render file: './app/views/layouts/potin.html.erb'
-    @index = params['index']
+    @user = User.find(params['index'])
   end
 
 end

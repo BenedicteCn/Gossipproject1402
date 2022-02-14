@@ -1,14 +1,10 @@
 <html>
-  <head>
-    <title>Retrouve le contenu du potin que tu as sélectionné !</title>
-  </head>
   <body>
-    <h1>Voici la page du potin n°<%=params['id']%></h1>
-        <p>
-          <strong>Son auteur : </strong><%= gossip.first_name %><br/>
-          <strong>Le contenu du potin :</strong> <%= gossip.content %>
-        </p>
+  <div class="card-body">
+    <h1>Voici le contenu du potin n°<%=params['index']%> : </h1>
+    <p>
+    </p>
     <a href='/'>Lien pour revenir à la page d'accueil</a>
-
+  </div>
   </body>
 </html>
