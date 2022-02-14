@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,18 +11,15 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <ul class="nav nav-tabs">
+    <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a class="nav-link active" aria-current="page" href="/">Page d'accueil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="<%= team_path%>">Team</a>
+    <a class="nav-link" href="<%= team_path%>">Equipe</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
+    <a class="nav-link" href="<%= contact_path%>">Contact</a>
   </li>
 </ul>
   </head>
